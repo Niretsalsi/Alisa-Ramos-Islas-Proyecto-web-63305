@@ -1,0 +1,771 @@
+
+*{   margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    /*.containerfull{}
+   
+    
+    max-width: 1440px;
+    width: 100%; 
+    margin: 0 auto; 
+    height: auto;*/
+
+
+.portada{
+/*border: 1px solid red;*/
+width: 100%;
+height: auto;
+display: grid;
+grid-template-columns: repeat(8,1fr);
+grid-template-rows: repeat(6,1fr);
+/*position: relative;  
+overflow: hidden;*/
+}
+
+
+.headerBackground {
+ background-color: #F9F9F9;
+ display: flex;
+}
+.headerBackground nav {
+display: flex;
+justify-content: space-between;
+padding: .625rem 2.5rem;
+width:100%;
+
+}
+.headerBackground ul {
+margin-top:.625rem;
+display: flex;
+gap: 20px;
+list-style: none;
+}
+.headerBackground li a {
+font-family: Inter;
+font-weight: 300;
+color: #4B4B4B; 
+text-decoration: none;
+padding: 5px; 
+}
+
+
+.iconohome img{
+    width: 2.5rem;;
+    height: 2.5rem;
+}
+
+
+.imgportada{
+  /*  position: absolute;  
+    top: -20%;     */    
+    left: 0;
+    width: 100%;
+    height: auto;
+    width:100%;
+
+grid-column-start:1;
+grid-column-end:9;
+grid-row-end:1;
+grid-row-start:6;
+}
+.logo{
+grid-column-start:2;
+grid-column-end:4;
+grid-row-end:1;
+grid-row-start:4;
+z-index:10;
+margin-top: 1.25rem;
+
+}
+.tituloPrincipal{
+    grid-column-start:4;
+    grid-column-end:8;
+    grid-row-end:2;
+    grid-row-start:3;
+    z-index:20;
+}
+.card-button-home{
+    grid-column-start:4;
+    grid-column-end:8;
+    grid-row-end:3;
+    grid-row-start:4;
+    z-index:30;
+    justify-self: center;
+
+}
+.seccionIntroduccion{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns:31.25rem 18.75rem;
+    grid-template-rows:
+    12.5rem 12.5rem ;
+   grid-template-areas:
+   " item1 item2 "
+   " item3 item2 "
+   ;
+  justify-content: center;
+  align-content: center;
+
+}
+.titulo-introduccion{
+    grid-area: item1;
+    margin-top: 1.875rem;
+   
+}
+
+.slogan-alineacion-izquierda{
+    text-align: right;
+    display: block;
+}
+.parrafo-introduccion{
+    grid-area: item3;
+    margin-top: 4.375rem;
+}
+
+.imagen-inicion{
+    grid-area: item2;
+    position: absolute;
+    
+}
+
+
+
+.tituloPrincipal{
+    font-family: Inter;
+    font-size: 1.5625rem;
+    color: #4B4B4B;
+    text-align: center;
+
+}
+
+
+.seccionIntroduccion h1{
+    font-family: Inter;
+    font-size: 3.125rem;
+    color: #4B4B4B;
+}
+
+.seccionIntroduccion p{
+    font-family: Inter;
+    font-size: .875rem;
+    color: #4B4B4B;
+}
+.slogan{
+    font-family: Inter;
+    font-style: italic;
+    font-size: .875rem;
+    color: #4B4B4B;
+}
+.fotos{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 12.5rem);;
+    grid-template-rows: 12.5rem 12.5rem;
+    grid-template-areas:
+    " imagen1 imagen2 imagen3 "
+    " imagen4 imagen5 imagen6 ";
+    justify-content: center;
+    align-content: center;  
+    gap: .625rem;
+    margin-top: 1.875rem;
+}
+.imagen1 { grid-area: imagen1; }
+.imagen2 { grid-area: imagen2; }
+.imagen3 { grid-area: imagen3; }
+.imagen4 { grid-area: imagen4; }
+.imagen5 { grid-area: imagen5; }
+.imagen6 { grid-area: imagen6; }
+
+.sectionCardsMasajes{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 1.25rem; 
+    align-items: center; 
+
+
+}
+.fotos img {
+    width: 100%;
+    height: 100%;
+    
+}
+.card-name{
+    font-family: Inter;
+    font-size: 1.25rem;
+    color: #4B4B4B;
+}
+.card-role{
+    font-family: Inter;
+    font-size: 1.25rem;
+    color: #4B4B4B;
+}
+.card-button-home{
+
+    background-color: #8DBEB8;      
+    font-family: Inter;             
+    font-size:.9375rem;               
+    border-radius: 1.25rem;            
+    padding: .625rem auto;              
+    width: 10rem;                   
+    height: 3rem;                   
+    text-align: center;              
+    color: #4B4B4B; 
+    margin:.3125rem auto ; 
+     
+}
+.piedeDePagina {
+font-family: Inter;
+font-size: .625rem;
+color: #4B4B4B;
+}
+.tituloPag{
+    font-family: Inter;
+    font-size: 2rem;
+    color: #4B4B4B;
+    text-align:center;
+    margin-bottom: 3.125rem;
+    margin-top: 3.125rem;
+
+}
+.introPag{
+font-family: Inter;
+    font-size:.625rem ;
+    color: #4B4B4B;
+    text-align:center;
+    margin-bottom: 3.125rem;
+    margin-top: 3.125rem;
+}
+.sectionCardsMasajes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem;
+
+}
+.cardMasaje{
+margin-top: 0;
+border-radius: 6.25rem;
+background-color: #F5F5F5;
+display: flex;
+width: 18.75rem;
+height: 33.125rem;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 3.75rem;
+gap: .625rem;
+
+}
+.introPag{
+    font-family: Inter;
+    font-size: 1.25rem;
+    color: #4B4B4B;
+    text-align: center;
+    font-weight:300;
+}
+.cardTitulo{
+    font-family: Inter;
+    font-size: .9375rem;
+    color: #4B4B4B;
+    text-align: center;
+}
+.cardDescripcion{
+    font-family: Inter;
+    font-size: .6875rem;
+    color: #4B4B4B;
+    text-align: center;
+}
+
+.equipo{
+    margin-top: 12.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+    flex-direction:row ;
+   justify-content: center;
+}
+.card-persona1{
+   
+    background-color: #F5F5F5;
+    border-radius: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: .625rem;
+  width:12.5rem;
+  height:18.75rem;
+   
+ 
+}
+.imgPersona{
+    width: 6.25rem;
+   height: auto;
+   border-radius: .625rem;
+   
+   }
+.imgProducto{
+    width: 14.6875rem; 
+   height: auto;
+   border-radius: 12.5rem;
+   }   
+
+   .cardInf1{
+    font-family: Inter;
+    font-size: .625rem;
+    color: #4B4B4B;
+    text-align: center;
+   }
+   .cardInf2{
+    font-family: Inter;
+    font-size: .625rem;
+    color: #4B4B4B;
+    text-align: center;
+   }
+   .cardInf3{
+    font-family: Inter;
+    font-size: .4375rem;
+    color: #4B4B4B;
+    text-align: center;
+   }
+
+  .seccion-formulario{
+    background-color: ;
+    font-family: Inter;
+    font-size: 1.25rem;
+    color: #4B4B4B;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  form {
+    width: 20rem;
+    height: auto;
+    margin: 1.25rem 1.25rem;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+   
+  }
+
+  form label {
+    font-weight: bold;
+  }
+
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  form input[type="submit"] {
+    padding: 10px 20px;
+    background-color:#8DBEB8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+  }
+.card-button{
+                
+    background-color: #8DBEB8;       
+    font-family: Inter;              
+    font-size: 1.25rem;                 
+    border-radius: 200rem;            
+    padding: .625rem .625rem;              
+    width: 12.5rem;                    
+    height: 3rem;                    
+    text-align: center;              
+    color: #4B4B4B;                 
+    margin: 0;    
+    justify-self: center;
+}
+
+
+.Yoga{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.cardYoga{
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+    max-width: 53.125rem;
+    height:auto;
+    margin: 1.875rem auto;
+    gap: 10px;
+    grid-template-columns: 1fr 0.2fr 2fr;
+    grid-template-areas: 
+    "item1 item1 item5"
+    "item2 item2 item5"
+    "item3 item3 item5";
+}
+
+
+.cardYoga .cardTitulo{
+    grid-area: item1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    align-self: end;         
+}
+
+.cardYoga .cardInf2{
+    grid-area: item2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9375rem;
+    align-self: start;                
+
+}
+.cardYoga .card-button{
+    grid-area: item3;                
+    background-color: #8DBEB8;       
+    font-family: Inter;              
+    font-size: 1.25rem;                 
+    border-radius: 200rem;            
+    padding: .625rem .625rem;              
+    width: 9.375rem;                    
+    height: 3rem;                    
+    text-align: center;              
+    color: #4B4B4B;                 
+    display: block;   
+    justify-self: center;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.seccion-meditacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100% ;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+.cardMeditacion{
+width: 46.875rem;
+height: auto;
+display: grid;
+justify-self:center;
+align-items: center;
+justify-content: center;
+gap: 1.25rem;
+padding: .625rem .625rem;
+box-sizing: border-box;           
+border: 1px solid #4B4B4B;         
+border-radius: 1.875rem;
+grid-column: 1fr 2fr;
+grid-template-rows: 1fr .3fr;
+grid-template-areas:
+"item1 item3"
+"item2 item3";
+}
+ .cardTitulo{
+    grid-area: item1;
+ }
+ .card-button{
+    grid-area: item2}
+   
+   
+   .cardMeditacion img{
+    grid-area: item3;
+    }
+     .cardMeditacion img{
+    width: 21.875rem;
+    height: auto;
+    border-radius: 1.25rem
+}
+
+ .cardMeditacion h2{
+text-justify: auto;
+font-size: 30px;
+font-family: Inter;
+color: #4B4B4B;
+text-align: center;
+ }
+
+ .cardMeditacion h3{
+     text-justify: auto;
+font-size:15px;
+ font-family: Inter;
+color: #4B4B4B;
+text-align: center;
+     }
+ .cardMeditacion h4{
+        text-justify: auto;
+        font-size: .625rem;
+         font-family: Inter;
+        color: #4B4B4B;
+        text-align: center;
+             }
+ 
+    
+
+
+.video{
+    width: 100%; 
+    max-width: 31.25rem; 
+    height: auto; 
+    border-radius: 20px;
+    grid-area: item5;
+}
+.piedeDePagina{
+background-color: #8DBEB8;
+width: 100%;
+height: 2.5rem;
+margin: 1.25rem auto;
+}
+.piedeDePagina h5{
+    text-align: center;
+    font-family: Inter;             
+    font-size:.9375rem;  
+    color:#4B4B4B;
+    margin: 1.25rem;
+    padding: .625rem;
+
+}
+
+
+
+
+/* css responsiv nav tablet */
+
+
+
+@media (max-width: 769px)
+ {
+    .headerBackground {
+        background-color: #F9F9F9;
+        display: flex;
+       }
+       .headerBackground nav {
+       display: flex;
+       justify-content: space-between;
+       padding: .625rem 2.5rem;
+       }
+       .sectionCardsMasajes{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1rem;
+   }
+   .imgProducto{
+    width: 9.375rem; 
+   height: auto;
+   border-radius: 12.5rem;
+   }   
+
+   .cardMasaje{
+    margin-top: 0;
+    border-radius: 6.25rem;
+    background-color: #F5F5F5;
+    display: flex;
+    width: 18.75rem;
+    height:25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.75rem;
+    gap: .625rem;
+}
+.Yoga{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+.cardYoga{
+    justify-content: center;
+    align-items: center;
+    width:43.75rem;
+    margin: 1.875rem;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 12.5rem  12.5rem 25rem;
+    grid-template-areas: 
+    "item1 item1 item5"
+    "item2 item2 item5"
+    "item3 item3 item5";
+}
+
+.video{
+    width:21.875rem;
+    height: auto;
+    border-radius: 20px;  
+}
+
+
+}
+
+/* movil*/
+@media (max-width: 321px) {
+    .headerBackground nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        width: 100%;
+    }
+
+    .headerBackground nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .headerBackground nav ul li {
+        width: 100%; 
+    }
+
+    .headerBackground nav ul li a {
+        display: block;
+        padding: 10px; 
+    }
+
+
+    .sectionCardsMasajes{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;  
+    width:100%;
+    margin: 0 auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+   
+.cardMasaje{
+    width:90%;
+    display: flex;
+    padding: 1rem;
+    margin: 0 auto;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;
+    height: 31.25rem;
+    margin:  0 auto;
+    box-sizing: border-box;
+    max-width: 300px;
+
+}
+
+.introPag{
+    margin: .9375rem;
+}
+
+.tituloPag{
+    margin:.9375rem;
+}
+.Yoga{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+.cardYoga{
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+    max-width: 20rem;
+    height:auto;
+    margin: 1.875rem auto;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item1 "
+    "item2 item2 "
+    "item3 item3 "
+    "item5 item5 ";
+}
+
+
+.cardYoga .cardTitulo{
+    grid-area: item1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    align-self: end;         
+}
+
+.cardYoga .cardInf2{
+    grid-area: item2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9375rem;
+    align-self: start;                
+
+}
+.cardYoga .card-button{
+    grid-area: item3;                
+    background-color: #8DBEB8;       
+    font-family: Inter;              
+    font-size: 1.25rem;                 
+    border-radius: 200rem;            
+    padding: .625rem .625rem;              
+    width: 9.375rem;                    
+    height: 3rem;                    
+    text-align: center;              
+    color: #4B4B4B;                 
+    display: block;   
+    justify-self: center;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.video{
+    width: 90%; 
+    max-width: 20rem; 
+    height: auto; 
+    border-radius: 20px;
+    grid-area: item5;
+    justify-self: center;
+}
+
+
+}
