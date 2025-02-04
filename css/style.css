@@ -34,6 +34,10 @@ padding: .625rem 2.5rem;
 width:100%;
 
 }
+
+nav li a:hover{
+    background-color: #8b8b8b5e;
+}
 .headerBackground ul {
 margin-top:.625rem;
 display: flex;
@@ -215,6 +219,22 @@ margin-top: 1.25rem;
     margin:.3125rem auto ; 
      
 }
+.portada a{
+font-family: Inter;
+font-weight: 300;
+color: #4B4B4B; 
+text-decoration: none;
+padding: .800rem .800rem;
+}
+
+.card-button-home:hover{
+    box-shadow:  1px .125rem .1875rem #4B4B4B;  
+}
+
+.card-button-home:active{
+    box-shadow:  1px .125rem .1875rem #084034;  
+    color: #F5F5F5;
+}
 .piedeDePagina {
 font-family: Inter;
 font-size: .625rem;
@@ -290,20 +310,18 @@ gap: .625rem;
 }
 .card-persona1{
    
-    background-color: #F5F5F5;
-    border-radius: 1.625rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: .625rem;
-  width:12.5rem;
-  height:18.75rem;
-   
- 
+background-color: #F5F5F5;
+border-radius: 1.625rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+gap: .625rem;
+width:14rem;
+height:21rem;
 }
 .imgPersona{
-    width: 6.25rem;
+   width: 6.25rem;
    height: auto;
    border-radius: .625rem;
    
@@ -334,7 +352,7 @@ gap: .625rem;
    }
 
   .seccion-formulario{
-    background-color: ;
+    background-color:#ccc;
     font-family: Inter;
     font-size: 1.25rem;
     color: #4B4B4B;
@@ -397,6 +415,10 @@ gap: .625rem;
     color: #4B4B4B;                 
     margin: 0;    
     justify-self: center;
+
+}
+.card-button:hover{
+    box-shadow: .0625rem .125rem .25rem #4B4B4B;
 }
 
 
